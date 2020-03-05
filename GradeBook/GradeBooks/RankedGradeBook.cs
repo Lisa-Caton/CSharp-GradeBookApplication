@@ -30,13 +30,13 @@ namespace GradeBook.GradeBooks
             //how many students before we go down a letter grade, then minus 1, bc index start at zero
             //if the value of that is equal or less than the average grade - we know we have an 'A'.
                 return 'A';
-            else if (grades[(threshold  *2) -1] <= averageGrade)
+            else if (grades[(threshold  * 2) -1] <= averageGrade)
             //"threshold *2" - that way its twice what we need to drop a letter grade
             //then determine, if that value, is equal or less than the average grade parameter - we know we have an 'B'.
                 return 'B';
-            else if (grades[(threshold * 2 )-1] <= averageGrade)
+            else if (grades[(threshold * 3)-1] <= averageGrade)
                 return 'C';
-            else if (grades[(threshold * 2) -1] <= averageGrade)
+            else if (grades[(threshold * 4) -1] <= averageGrade)
                 return 'D';
             else
             {
