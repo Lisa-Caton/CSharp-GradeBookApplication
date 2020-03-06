@@ -53,8 +53,7 @@ namespace GradeBook.UserInterfaces
             }
             else
             {
-                var capture = Console.ReadLine();
-                Console.WriteLine("{capture} + is not a supported type of gradebook, please try again", type);
+                Console.WriteLine("{0} is not a supported type of gradebook, please try again", type);
                 return;
             }
   
